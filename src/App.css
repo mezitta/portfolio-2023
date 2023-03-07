@@ -1,24 +1,15 @@
-:root {
-  --main-lght: #fffde4;
-  --main-drk: #000000;
+*::-webkit-scrollbar {
+  display: none;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
+  -ms-overflow-style: none;
+  scrollbar-width:none;
 }
 
 .App {
   background-color: #fffde4;
   min-height: 100vh;
   min-width: 100vw;
+  max-width: 100%;
 }
-
-
-
-

@@ -1,0 +1,70 @@
+@import '../assets/Colors.css';
+
+@keyframes slideOutLeft {
+    0% {
+        left: 0;
+        background-color: var(--main-drk);
+    }
+    100% {
+        left: -200%;
+        
+    }
+}
+
+.load-block {
+    animation: 0.4s linear 0s 1 slideOutLeft;
+    height: 40vh;
+    width: 200%;
+    background: linear-gradient(to right, var(--main-drk), var(--main-drk) 85%, var(--main-lght) 100%);
+    position: absolute;
+    transform: skewX(-10deg);
+    left: -200%;
+}
+
+.home-container {
+    padding: 0;
+    margin: 0;
+}
+
+.home-container::-webkit-scrollbar {
+    display: none;
+  }
+
+.home-header {
+    background-color: var(--main-lght);
+    height: 40vh;
+    max-width: 100%;
+    margin: 0;
+    /* position: relative; */
+    /* overflow-y: hidden; */
+}
+
+.name-row, .title-row, .home-body {
+    padding-left: 2.5vw;
+}
+
+.name-row {
+    height: calc(0.80 * 40vh);
+
+    display: flex;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 3vw;
+}
+
+.title-row {
+    height: calc(0.2 * 40vh);
+
+    display: flex;
+    align-items: flex-end;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 1.25vw;
+}
+
+.home-body {
+    background-color: var(--main-drk);
+    color: var(--main-lght);
+    height: 60vh;
+}
