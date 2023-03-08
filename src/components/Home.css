@@ -39,6 +39,10 @@
     /* overflow-y: hidden; */
 }
 
+.header-left {
+    padding-left: 0;
+}
+
 .name-row, .title-row, .home-body {
     padding-left: 2.5vw;
 }
