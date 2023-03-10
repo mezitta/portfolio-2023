@@ -49,21 +49,19 @@
 
 .name-row {
     height: calc(0.80 * 40vh);
-
     display: flex;
     align-items: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
-    font-size: 3vw;
+    font-family: 'Hylia' ,Georgia, 'Times New Roman', Times, serif;
+    font-size: 3.5vw;
 }
 
 .title-row {
     height: calc(0.2 * 40vh);
-
     display: flex;
     align-items: flex-end;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
+    font-style: italic;
     font-size: 1.25vw;
 }
 
@@ -71,4 +69,15 @@
     background-color: var(--main-drk);
     color: var(--main-lght);
     height: 60vh;
+}
+
+/* Half Screen */
+@media screen  and (max-width: 992px) {
+    .name-row {
+        font-size: 6.5vw;
+    }
+
+    .title-row {
+        font-size: 2.3vw;
+    }
 }
